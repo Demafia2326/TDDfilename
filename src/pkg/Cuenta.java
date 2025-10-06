@@ -12,13 +12,13 @@ public class Cuenta {
 
 
 	public void ingresar(Double i) {
-		setSaldo(i);
+		this.saldo += i;
 		
 	}
 
 
 	public void retirar(Double i) {
-		setSaldo(saldo - i);
+		this.saldo -= i;
 	}
 
 	
