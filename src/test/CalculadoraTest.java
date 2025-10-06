@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import pkg.Calculadora;
+
 class CalculadoraTest {
 
 	@BeforeAll
@@ -35,17 +37,17 @@ class CalculadoraTest {
 	
 	@Test
 	void testResta() {
-		assertEquals(5, Calculadora.resta(3,2));
+		assertEquals(1, Calculadora.resta(3,2));
 	}
 	
 	@Test
 	void testMultiplica() {
-		assertEquals(5, Calculadora.multiplicacion(2,3));
+		assertEquals(6, Calculadora.multiplicacion(2,3));
 	}
 	
 	@Test
 	void testDivide() {
-		assertEquals(5, Calculadora.division(6,2));
+		assertEquals(3, Calculadora.division(6,2));
 	}
 
 }
